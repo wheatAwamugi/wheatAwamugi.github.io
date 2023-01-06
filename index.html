@@ -16,6 +16,7 @@
 <body>
 
 	<header class="section-general header">
+		<div class="logo"><img src="img/logo.png" alt=""></div>
 		<h1 class="header-title">Dead By Daylight Perk List</h1>
 		<p class="header-desc">3 language cheet sheet</p>
 	</header>
@@ -27,9 +28,9 @@
 
 			<div class="list-switch" id="switch-lang">
 				<p class="list-switch__item title-lang">Language : </p>
-				<p class="list-switch__item"><input type="radio" id="lang_en" name="lang" value="en" checked><label for="lang_en">English</label></p>
-				<p class="list-switch__item"><input type="radio" id="lang_ja" name="lang" value="ja"><label for="lang_ja">日本語</label></p>
-				<p class="list-switch__item"><input type="radio" id="lang_it" name="lang" value="it"><label for="lang_it">Italiana</label></p>
+				<p class="list-switch__item"><input type="radio" id="lang_en" name="lang" value="en" checked><label for="lang_en" class="label-radio">English</label></p>
+				<p class="list-switch__item"><input type="radio" id="lang_ja" name="lang" value="ja"><label for="lang_ja" class="label-radio">日本語</label></p>
+				<p class="list-switch__item"><input type="radio" id="lang_it" name="lang" value="it"><label for="lang_it" class="label-radio">Italiana</label></p>
 			</div>
 			<div class="list-select">
 				<p class="list-select__item title-surv">Survivor : </p>
@@ -40,13 +41,14 @@
 				</p>
 			</div>
 			<div class="list-select">
-				<p class="list-select__item title-killer">killer : </p>
+				<p class="list-select__item title-killer">Killer : </p>
 				<div class="list-select__item" id="select_killer">
 				</div>
 				<p class="list-select__item">
 					<button class="reset-killer-select">Reset</button>
 				</p>
 			</div>
+			<p class="msg-tips">You can search by name using Ctrl+f or Command+f</p>
 		</div>
 	</nav>
 	

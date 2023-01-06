@@ -172,7 +172,7 @@ body {
   background-color: #16181d;
   color: #f8f8f8;
   font-size: 100%;
-  font-family: Inter, sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 .section-general {
@@ -184,8 +184,18 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   text-align: center;
-  padding-top: 8em;
+  padding-top: 4em;
   padding-bottom: 4em;
+}
+.section-general.header .logo {
+  text-align: center;
+  line-height: 0;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.section-general.header .logo img {
+  width: 100%;
 }
 .section-general.header h1 {
   font-size: 160%;
@@ -268,6 +278,49 @@ a:visited {
 .nav .list-switch .list-switch__item.list-switch__item:nth-child(1) {
   align-self: flex-start;
 }
+.nav .list-switch .list-switch__item input[type=radio] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: none;
+}
+.nav .list-switch .list-switch__item .label-radio {
+  padding-left: 28px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  cursor: pointer;
+}
+.nav .list-switch .list-switch__item .label-radio::after {
+  background: #cc0100;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 10px;
+  left: 9px;
+  margin-top: -4px;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  width: 10px;
+}
+.nav .list-switch .list-switch__item .label-radio::before {
+  background: #16181d;
+  border: 1px solid #f8f8f8;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 16px;
+  left: 5px;
+  margin-top: -8px;
+  position: absolute;
+  top: 45%;
+  width: 16px;
+}
+.nav .list-switch .list-switch__item input[type=radio]:checked + .label-radio::after {
+  opacity: 1;
+}
 .nav .list-select {
   display: flex;
   align-items: center;
@@ -275,15 +328,42 @@ a:visited {
   gap: 1em;
   padding: 0.5em 0em;
 }
+.nav .list-select .list-select__item {
+  box-sizing: border-box;
+}
 .nav .list-select .list-select__item.list-select__item:nth-child(1) {
   width: 30%;
-  align-self: flex-start;
 }
 .nav .list-select .list-select__item.list-select__item:nth-child(2) {
   width: 40%;
 }
 .nav .list-select .list-select__item.list-select__item:nth-child(2) select {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  padding: 0.5em 0.6em;
   width: 100%;
+  border: 1px solid #f8f8f8;
+  background: white url("../img/arrow-select-element.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.nav .list-select .list-select__item button {
+  border: 1px solid #cc0100;
+  width: 100%;
+  display: block;
+  padding: 0.5em 1em;
+  background-color: #cc0100;
+  color: #f8f8f8;
+  cursor: pointer;
+}
+.nav .msg-tips {
+  font-size: 90%;
+  text-align: center;
+  margin-top: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

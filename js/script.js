@@ -12,6 +12,7 @@ function changeHeaderTitle() {
 	let NavSelectKiller = document.querySelector('.list-select .title-killer');
 	let NavSelectSurvResetBtn = document.querySelector('.reset-surv-select');
 	let NavSelectKillerResetBtn = document.querySelector('.reset-killer-select');
+	let NavMsgTips = document.querySelector('.msg-tips');
 
 	if(currentLang == 'en') {
 		headerTitle.innerHTML = 'Dead By Daylight Perks';
@@ -22,6 +23,7 @@ function changeHeaderTitle() {
 		NavSelectKiller.innerHTML = 'killer : ';
 		NavSelectSurvResetBtn.innerHTML = 'Reset';
 		NavSelectKillerResetBtn.innerHTML = 'Reset';
+		NavMsgTips.innerHTML = 'You can search a perk by name using Ctrl+f or Command+f';
 	} else if(currentLang == 'ja') {
 		headerTitle.innerHTML = 'デッドバイデイライト　パーク一覧';
 		headerDesc.innerHTML = '３言語早見表';
@@ -31,6 +33,7 @@ function changeHeaderTitle() {
 		NavSelectKiller.innerHTML = 'キラー : ';
 		NavSelectSurvResetBtn.innerHTML = '未選択にする';
 		NavSelectKillerResetBtn.innerHTML = '未選択にする';
+		NavMsgTips.innerHTML = 'Ctrl+f か Command+f を使ってパーク名検索ができます。';
 	} else {
 		headerTitle.innerHTML = 'Dead By Daylight Competenze';
 		headerDesc.innerHTML = 'Foglio di 3 lingue';
@@ -40,6 +43,7 @@ function changeHeaderTitle() {
 		NavSelectKiller.innerHTML = 'Assassino : ';
 		NavSelectSurvResetBtn.innerHTML = 'Ripristina';
 		NavSelectKillerResetBtn.innerHTML = 'Ripristina';
+		NavMsgTips.innerHTML = 'Puoi cercare un vantaggio per nome usando Ctrl+f o Command+f';
 	}
 
 }
@@ -270,7 +274,8 @@ window.onload = function() {
 	});
 
 	let Nav = document.querySelector('.nav');
-	Nav.style.bottom = '-'+Nav.offsetHeight+'px';
+	let NavHeight = Nav.offsetHeight;
+	Nav.style.bottom = '-'+NavHeight+'px';
 	Nav.style.visibility = 'visible';
 
 	let NavFilterBtn = document.querySelector('#filter-tab');
