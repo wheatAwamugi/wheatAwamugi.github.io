@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<script src="js/data_perk.js"></script>
+	<script src="js/data_surv.js"></script>
+	<script src="js/data_killer.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<header class="section-general header">
+		<h1 class="header-title">Dead By Daylight Perk List</h1>
+		<p class="header-desc">3 language cheet sheet</p>
+	</header>
+
+	<nav class="nav" data-is-open="false">
+		<div class="nav-wrapper">
+
+			<span id="filter-tab">Filter</span>
+
+			<div class="list-switch" id="switch-lang">
+				<p class="list-switch__item title-lang">Language : </p>
+				<p class="list-switch__item"><input type="radio" id="lang_en" name="lang" value="en" checked><label for="lang_en">English</label></p>
+				<p class="list-switch__item"><input type="radio" id="lang_ja" name="lang" value="ja"><label for="lang_ja">日本語</label></p>
+				<p class="list-switch__item"><input type="radio" id="lang_it" name="lang" value="it"><label for="lang_it">Italiana</label></p>
+			</div>
+			<div class="list-select">
+				<p class="list-select__item title-surv">Survivor : </p>
+				<div class="list-select__item" id="select_surv">
+				</div>
+				<p class="list-select__item">
+					<button class="reset-surv-select">Reset</button>
+				</p>
+			</div>
+			<div class="list-select">
+				<p class="list-select__item title-killer">killer : </p>
+				<div class="list-select__item" id="select_killer">
+				</div>
+				<p class="list-select__item">
+					<button class="reset-killer-select">Reset</button>
+				</p>
+			</div>
+		</div>
+	</nav>
+	
+	<section class="section-general perk">
+		<div id="nav-perk">
+		</div>
+	</section>
+
+	
+	<script>
+
+		
+	</script>
+
+</body>
+</html>

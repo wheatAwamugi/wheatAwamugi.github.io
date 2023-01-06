@@ -1,0 +1,40 @@
+body {
+	background-color: #16181d;
+	color: #f8f8f8;
+	font-size: 100%;
+	font-family: Inter,sans-serif;
+}
+
+
+.section-general {
+	padding: 1em;
+
+	&.header {
+		background: 
+			linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+			url('../img/dbd-keyart-default.jpg');
+		// background-image: ;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		text-align: center;
+		padding-top: 8em;
+		padding-bottom: 4em;
+
+		h1 {
+			font-size: 160%;
+		}
+		p {
+			margin-top: 1em;
+		}
+	}
+}
+
+
+a {
+	color: #f8f8f8;
+	text-decoration: none;
+	&:visited {
+		color: #f8f8f8;
+	}
+}

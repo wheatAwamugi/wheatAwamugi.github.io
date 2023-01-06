@@ -1,0 +1,285 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+body {
+  background-color: #16181d;
+  color: #f8f8f8;
+  font-size: 100%;
+  font-family: Inter, sans-serif;
+}
+
+.section-general {
+  padding: 1em;
+}
+.section-general.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/dbd-keyart-default.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  text-align: center;
+  padding-top: 8em;
+  padding-bottom: 4em;
+}
+.section-general.header h1 {
+  font-size: 160%;
+}
+.section-general.header p {
+  margin-top: 1em;
+}
+
+a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+a:visited {
+  color: #f8f8f8;
+}
+
+.list-perk {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+.list-perk .list-perk-item {
+  text-align: center;
+  margin-top: 2em;
+  width: 20%;
+}
+.list-perk .list-perk-item .list-perk-title {
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+}
+.list-perk .list-perk-item .list-perk-belong {
+  font-size: 90%;
+}
+
+.nav {
+  width: 100%;
+  background-color: #111;
+  position: fixed;
+  left: 0;
+  border-top: 6px solid #cc0100;
+  visibility: hidden;
+  transition: bottom 0.2s ease-out;
+}
+.nav[data-is-open=true] {
+  bottom: 0 !important;
+}
+.nav .nav-wrapper {
+  margin: 0 auto;
+  max-width: 520px;
+  position: relative;
+  padding: 2em 0em;
+}
+.nav .nav-wrapper #filter-tab {
+  position: absolute;
+  left: 50%;
+  top: -3em;
+  transform: translate(-50%, 0%);
+  background-color: #cc0100;
+  padding: 1em 4em 1em 4em;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  cursor: pointer;
+}
+.nav .list-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.5em 0em;
+}
+.nav .list-switch .list-switch__item label {
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+.nav .list-switch .list-switch__item.list-switch__item:nth-child(1) {
+  align-self: flex-start;
+}
+.nav .list-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.5em 0em;
+}
+.nav .list-select .list-select__item.list-select__item:nth-child(1) {
+  width: 30%;
+  align-self: flex-start;
+}
+.nav .list-select .list-select__item.list-select__item:nth-child(2) {
+  width: 40%;
+}
+.nav .list-select .list-select__item.list-select__item:nth-child(2) select {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
